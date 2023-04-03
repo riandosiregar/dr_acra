@@ -31,7 +31,6 @@ from pyngrok import ngrok
 
 
 
-
 ngrok.set_auth_token("2LonMZbaS41s6CASLcEM7yJ8kdQ_VJBpynu3ShKjaVsHuQBK")
 
 app = Flask(__name__)
