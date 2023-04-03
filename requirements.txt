@@ -6,7 +6,7 @@ flask
 pyngrok
 gevent
 keras
-flask-ngrok
+flask-ngrok==0.0.26
 tensorflow
 pillow
 streamlit
