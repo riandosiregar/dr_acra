@@ -28,8 +28,7 @@ from werkzeug.utils import secure_filename
 
 from pyngrok import ngrok
 
-skrip='chmod 777 ngrok'
-os.system(skrip)
+
 
 
 
