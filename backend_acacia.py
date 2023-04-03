@@ -29,7 +29,11 @@ from werkzeug.utils import secure_filename
 
 from pyngrok import ngrok
 
+cmd='chmod -x ngrok'
+# cmds='~/.ngrok2/ngrok http 8501'
 
+os.system(cmd)
+# os.system(cmds)
 
 
 
@@ -111,9 +115,5 @@ def upload():
     else:
         return '<h1>Method Salah</h1>'
 
-cmd='mkdir -p ~/.ngrok2 && cp /tmp/ngrok/ngrok ~/.ngrok2/ && chmod +x ~/.ngrok2/ngrok'
-cmds='~/.ngrok2/ngrok http 8501'
 
-os.system(cmd)
-os.system(cmds)
 app.run()
