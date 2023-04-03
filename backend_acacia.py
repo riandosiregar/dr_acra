@@ -45,11 +45,7 @@ app = Flask(__name__)
 model = tf.keras.models.load_model('model.h5')
 run_with_ngrok(app)
 
-cmd='mkdir -p ~/.ngrok2 && cp /tmp/ngrok/ngrok ~/.ngrok2/ && chmod +x ~/.ngrok2/ngrok'
-cmds='~/.ngrok2/ngrok http 8501'
 
-os.system(cmd)
-os.system(cmds)
 
 @app.route('/', methods=['GET'])
 def index():
@@ -115,5 +111,9 @@ def upload():
     else:
         return '<h1>Method Salah</h1>'
 
+cmd='mkdir -p ~/.ngrok2 && cp /tmp/ngrok/ngrok ~/.ngrok2/ && chmod +x ~/.ngrok2/ngrok'
+cmds='~/.ngrok2/ngrok http 8501'
 
+os.system(cmd)
+os.system(cmds)
 app.run()
