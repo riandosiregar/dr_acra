@@ -6,7 +6,7 @@ flask
 pyngrok
 gevent
 keras
-git+https://github.com/gstaff/flask-ngrok/blob/master/flask_ngrok.py
+git+https://github.com/gstaff/flask-ngrok
 tensorflow
 pillow
 streamlit
