@@ -29,7 +29,7 @@ from werkzeug.utils import secure_filename
 
 from pyngrok import ngrok
 
-cmd='chmod -x ngrok'
+cmd='chmod -x /tmp/ngrok ngrok'
 # cmds='~/.ngrok2/ngrok http 8501'
 
 os.system(cmd)
