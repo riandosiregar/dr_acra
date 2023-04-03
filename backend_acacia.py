@@ -29,11 +29,7 @@ from werkzeug.utils import secure_filename
 
 from pyngrok import ngrok
 
-cmd='mkdir -p ~/.ngrok2 && cp /tmp/ngrok/ngrok ~/.ngrok2/ && chmod +x ~/.ngrok2/ngrok'
-cmds='~/.ngrok2/ngrok http 8501'
 
-os.system(cmd)
-os.system(cmds)
 
 
 
@@ -41,6 +37,12 @@ os.system(cmds)
 ngrok.set_auth_token("2LonMZbaS41s6CASLcEM7yJ8kdQ_VJBpynu3ShKjaVsHuQBK")
 
 app = Flask(__name__)
+
+cmd='mkdir -p ~/.ngrok2 && cp /tmp/ngrok/ngrok ~/.ngrok2/ && chmod +x ~/.ngrok2/ngrok'
+cmds='~/.ngrok2/ngrok http 8501'
+
+os.system(cmd)
+os.system(cmds)
 
 # !ngrok authtoken 2LonMZbaS41s6CASLcEM7yJ8kdQ_VJBpynu3ShKjaVsHuQBK
 
