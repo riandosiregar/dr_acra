@@ -39,7 +39,7 @@ app = Flask(__name__)
 
 # !ngrok authtoken 2LonMZbaS41s6CASLcEM7yJ8kdQ_VJBpynu3ShKjaVsHuQBK
 
-model = tf.keras.models.load_model('model_acacia_4.h5')
+model = tf.keras.models.load_model('model.h5')
 run_with_ngrok(app)
 
 
