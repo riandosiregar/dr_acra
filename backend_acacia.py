@@ -37,8 +37,7 @@ run_with_ngrok(app)
 
 @app.route('/', methods=['GET'])
 def index():
-    return "<center><div><h1>Backend Dr. Acra is Online!</h1><image src='https://thumbs.gfycat.com/InfiniteRemarkableDesertpupfish-size_restricted.gif' ></image></div></center>"
-
+    return "<center><div><h1>Backend Dr. Acra is Online!</h1></div></center>"
 
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
