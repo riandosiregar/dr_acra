@@ -3,7 +3,7 @@ numpy==1.20.1
 pandas==1.2.4
 pip==1.0.1
 flask
-pyngrok==5.2.1
+pyngrok==6.0.0
 gevent
 keras
 git+https://github.com/gstaff/flask-ngrok
