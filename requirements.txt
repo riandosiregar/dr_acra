@@ -4,7 +4,7 @@ pandas==1.2.4
 pip==1.0.1
 flask
 gevent
-git+https://github.com/alexdlaird/pyngrok
+pyngrok==5.0.6
 keras
 git+https://github.com/gstaff/flask-ngrok
 tensorflow
